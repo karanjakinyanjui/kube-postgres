@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: postgres-cluster
+data:
+  POSTGRES_DB: myapp
+  POSTGRES_USER: admin
+  REPLICATION_USER: repl_user
+  PRIMARY_HOST: postgres-primary
